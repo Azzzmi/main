@@ -1,0 +1,190 @@
+:root {
+    --primary: #323232;
+    --bg: #1A1A1B;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--bg);
+    color: white;
+}
+
+/*nav bar*/
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:1.4rem 7%;
+    background-color: rgb(255, 255, 255);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+}
+
+
+.navbar .navbar-logo {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.navbar .navbar-logo span {
+    color:steelblue;
+}
+
+.navbar .navbar-isi a {
+    color:#2C74B3;
+    display:  inline-block;
+    font-weight: 700;
+    font-size: 1rem;
+    margin: 0 1.9rem;
+}
+
+.navbar .navbar-isi a:hover {
+    color: #2C74B3;
+}
+
+.navbar .navbar-isi a::after {
+    content: '';
+    display: block;
+    padding-bottom: 0.5rem;
+    border-bottom: 0.1rem solid #2C74B3;
+    transform: scaleX(0);
+    transition: 0.5s;
+}
+
+.navbar .navbar-isi a:hover::after {
+    transform: scaleX(1);
+}
+
+.navbar .navbar-tambahan a {
+    color: #1A1A1B;
+    margin: 0 0.5rem;
+}
+
+#menuBar {
+    display: none;
+}
+
+.navbar-tambahan {
+    display: flex;
+    width: auto;
+}
+
+.navbar-tambahan .input-group {
+    display: flex;
+    align-items: center;
+    color: #1A1A1B;
+    margin-left: auto;
+}
+
+.navbar .navbar-tambahan .menubar{
+    justify-content: center;
+    margin-left: 15px;
+}
+
+.navbar-tambahan .input-group .tombol {
+    appearance: none;
+    background-color: transparent;
+    border: 0.100em solid #1A1A1A;
+    border-radius: 0.9375em;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0;
+    min-height: 3.05em;
+    min-width: 0;
+    margin-left: 10px; /* Jarak antara nama pengguna dan tombol */
+    margin-right: auto;
+    outline: none;
+    padding: 2px 20px 2px 20px ;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s, transform 0.3s, border-color 0.3s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    will-change: transform;
+}
+
+.navbar-tambahan .input-group .tombol:disabled {
+    pointer-events: none;
+   }
+   
+.navbar-tambahan .input-group .tombol:hover {
+    background-color: #176db9;
+    color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+   }
+   
+.navbar-tambahan .input-group .tombol:active {
+    box-shadow: none;
+    transform: translateY(0);
+    padding: 2px 18px 2px 18px;
+   }
+
+.navbar-tambahan .input-group .tombol a {
+    color: inherit;
+    transition: color 0.3s;
+}
+
+.navbar-tambahan .input-group .tombol a:hover {
+    color: white;
+}
+
+.user-name {
+    font-weight: bold;
+    color: black; /* Warna teks hitam */
+    margin-right: 10px;
+    font-size: 1.2rem; /* Ukuran font diperbesar */
+}
+
+img {
+    align-items: center;
+    width: 500px; 
+    height: auto;
+}
+
+.container-trending h1 {
+    padding-top: 6rem;
+    color: brown;
+}
+
+/**/
+
+.kotak {
+    background-color: #f7f7f7;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 80px;
+    margin-bottom: 40px;
+    margin-left: 85px;
+    margin-right: 75px;
+    margin-top: 2px;
+  }
+  
+  .kotak h1 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .kotak p {
+    font-size: 20px;
+    text-align: justify;
+    color: #000000;
+  }
+  
